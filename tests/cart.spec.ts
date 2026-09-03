@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('add a product to the cart and capture checkout', async ({ page }) => {
-  await page.goto('https://practicesoftwaretesting.com/', {
+  await page.goto('/', {
     waitUntil: 'domcontentloaded',
   });
 

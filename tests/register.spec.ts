@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('TC-03: ตรวจสอบ validation ตอนลงทะเบียนเมื่อกรอกรหัสผ่านไม่ตรงเงื่อนไข', async ({ page }) => {
-  await page.goto('https://practicesoftwaretesting.com/', {
+  await page.goto('/', {
     waitUntil: 'domcontentloaded',
   });
 

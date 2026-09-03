@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('TC-01: ค้นหาสินค้าด้วย keyword Hammer', async ({ page }) => {
 
-  await page.goto('https://practicesoftwaretesting.com/');
+  await page.goto('/');
   await page.locator('[data-test="search-query"]').fill('Hammer');
   await page.locator('[data-test="search-submit"]').click();
   await expect(
@@ -20,7 +20,7 @@ test('TC-01: ค้นหาสินค้าด้วย keyword Hammer', asyn
 });
 
 test('TC-02: เพิ่มสินค้าลงตะกร้าและตรวจสอบยอดรวมในตะกร้า', async ({ page }) => {
-  await page.goto('https://practicesoftwaretesting.com/', {
+  await page.goto('/', {
     waitUntil: 'domcontentloaded',
   });
 
